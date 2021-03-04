@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Admin Pages\Menu.aspx" />
     <Content Include="Admin Pages\Orders.aspx" />
+    <Content Include="Admin Pages\SignIn.aspx" />
     <Content Include="Client Pages\HomePage.aspx" />
     <Content Include="Client Pages\Menu.aspx" />
     <Content Include="Client Pages\Reviews.aspx" />
@@ -98,6 +99,13 @@
     </Compile>
     <Compile Include="Admin Pages\Orders.aspx.designer.cs">
       <DependentUpon>Orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Pages\SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin Pages\SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
     </Compile>
     <Compile Include="Client Pages\HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>

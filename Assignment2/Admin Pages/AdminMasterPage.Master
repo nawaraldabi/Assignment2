@@ -19,23 +19,17 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="HomePage.aspx">Home</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="Menu.aspx">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Reviews.aspx">Reviews</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Shop</a>
+                    <a class="nav-link" href="Orders.aspx">Orders</a>
                 </li>
             </ul>
         </div>
         <div class="d-flex justify-content-end">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="SignIn.aspx">Sign In</a>
+                    <a class="nav-link" href="...">Sign Out</a>
                 </li>
             </ul>
         </div>
