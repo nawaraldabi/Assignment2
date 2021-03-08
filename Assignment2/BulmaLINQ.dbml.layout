@@ -14,5 +14,11 @@
         <elementListCompartment Id="c7f59d09-dde3-4302-b132-c1e6fcfece81" absoluteBounds="5.64, 2.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <classShape Id="7b45ee4e-2075-45de-aba4-1bab7583c236" absoluteBounds="2.5, 3.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/BulmaLINQDataContext/MenuItem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b29532b2-70c0-46ec-aa55-68d9c23a7880" absoluteBounds="2.5149999999999997, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

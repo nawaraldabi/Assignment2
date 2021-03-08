@@ -13,4 +13,13 @@
       <Column Name="password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.MenuItem" Member="MenuItems">
+    <Type Name="MenuItem">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="ImageUrl" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
 </Database>
