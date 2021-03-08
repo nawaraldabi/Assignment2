@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="BulmaLINQ">
+  <DataContextMoniker Name="/BulmaLINQDataContext" />
+  <nestedChildShapes>
+    <classShape Id="6ebf4fd5-9345-4b96-9b62-eea37856e82e" absoluteBounds="2.375, 2.125, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/BulmaLINQDataContext/Review" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d6edc7c6-a337-446f-be89-cc6b60309fb6" absoluteBounds="2.39, 2.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5fa169af-4c52-4e6e-bfa3-d19f3e1f83bc" absoluteBounds="5.625, 2, 2, 1.3862939453125">
+      <DataClassMoniker Name="/BulmaLINQDataContext/Account" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c7f59d09-dde3-4302-b132-c1e6fcfece81" absoluteBounds="5.64, 2.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

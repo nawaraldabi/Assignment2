@@ -11,7 +11,18 @@ namespace Assignment2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (IsPostBack)
+            {
+                if (!Session["username"].ToString().Equals(""))
+                {
+                    masterSignInbutton.Text = Session["username"].ToString();
+                    masterSignInbutton.NavigateUrl = "AccountInfo.aspx";
+                }
+                else
+                {
+                    masterSignInbutton.Text = "Sign In";
+                }
+            }
         }
     }
 }

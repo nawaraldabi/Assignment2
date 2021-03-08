@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -70,6 +71,11 @@
     <Content Include="Admin Pages\Menu.aspx" />
     <Content Include="Admin Pages\Orders.aspx" />
     <Content Include="Admin Pages\SignIn.aspx" />
+    <Content Include="App_Data\Bulmadb.mdf" />
+    <Content Include="App_Data\Bulmadb_log.ldf">
+      <DependentUpon>Bulmadb.mdf</DependentUpon>
+    </Content>
+    <Content Include="Client Pages\AccountInfo.aspx" />
     <Content Include="Client Pages\HomePage.aspx" />
     <Content Include="Client Pages\Menu.aspx" />
     <Content Include="Client Pages\Reviews.aspx" />
@@ -106,6 +112,21 @@
     </Compile>
     <Compile Include="Admin Pages\SignIn.aspx.designer.cs">
       <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BulmaLINQ.cs">
+      <DependentUpon>BulmaLINQ.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="BulmaLINQ.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BulmaLINQ.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Client Pages\AccountInfo.aspx.cs">
+      <DependentUpon>AccountInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client Pages\AccountInfo.aspx.designer.cs">
+      <DependentUpon>AccountInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Client Pages\HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
@@ -154,6 +175,14 @@
   <ItemGroup>
     <Content Include="Client Pages\myMasterPage.Master" />
     <Content Include="Admin Pages\AdminMasterPage.Master" />
+    <Content Include="BulmaLINQ.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>BulmaLINQ.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="BulmaLINQ.dbml.layout">
+      <DependentUpon>BulmaLINQ.dbml</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -162,7 +191,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

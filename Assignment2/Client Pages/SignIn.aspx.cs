@@ -13,5 +13,22 @@ namespace Assignment2.Client_Pages
         {
 
         }
+        public void signIn(object sender, EventArgs e)
+        {
+            using (BulmaLINQDataContext dbContext = new BulmaLINQDataContext())
+            {
+                Account account = dbContext.Accounts.SingleOrDefault(x => x.email == Request["emailInput"]);
+                if(Request["passwordInput"] == account.password)
+                {
+                    ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('" + "Login successful" + "');", true);
+                    Session["username"] = account.fullName;
+                    Response.Redirect("HomePage.aspx");
+                }
+                else
+                {
+                    ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('" + "Login NOT successful" + "');", true);
+                }
+            }       
+        }
     }
 }
