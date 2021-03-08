@@ -13,7 +13,7 @@ namespace Assignment2
         {
             if (IsPostBack)
             {
-                if (!Session["username"].ToString().Equals(""))
+                if (Session["username"] != null)
                 {
                     masterSignInbutton.Text = Session["username"].ToString();
                     masterSignInbutton.NavigateUrl = "AccountInfo.aspx";
