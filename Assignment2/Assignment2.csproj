@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -70,10 +71,6 @@
     <Content Include="Admin Pages\Menu.aspx" />
     <Content Include="Admin Pages\Orders.aspx" />
     <Content Include="Admin Pages\SignIn.aspx" />
-    <Content Include="App_Data\MenuDB.mdf" />
-    <Content Include="App_Data\MenuDB_log.ldf">
-      <DependentUpon>MenuDB.mdf</DependentUpon>
-    </Content>
     <Content Include="Client Pages\HomePage.aspx" />
     <Content Include="Client Pages\Menu.aspx" />
     <Content Include="Client Pages\Reviews.aspx" />
@@ -165,6 +162,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

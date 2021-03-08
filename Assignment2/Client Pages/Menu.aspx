@@ -8,7 +8,7 @@
       <div class="card-body">
         <h5 class="card-title">Ramen</h5>
         <p class="card-text">contains ramen, sauce and vegies.</p><img src="..." class="rounded mx-auto d-block" alt="...">
-        <span class="badge bg-primary">99$</span>
+        <span class="badge bg-primary card1">99$</span>
       </div>
     </div>
   </div>
